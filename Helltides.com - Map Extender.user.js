@@ -3,7 +3,7 @@
 // @namespace    https://helltides.com/
 // @version      0.1
 // @description  try to take over the world!
-// @author       DrainLife
+// @author       uolamer
 // @match        https://helltides.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=helltides.com
 // @grant        none
