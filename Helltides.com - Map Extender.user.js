@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Helltides.com - Map Extender
-// @namespace    https://helltides.com/
+// @namespace    https://github.com/uolamer/userscripts/
 // @version      0.1
 // @description  A simple script to resize the map on Helltides.com. I find it more usable on a larger monitor this way.
 // @author       uolamer
