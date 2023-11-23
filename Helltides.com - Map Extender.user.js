@@ -2,7 +2,7 @@
 // @name         Helltides.com - Map Extender
 // @namespace    https://helltides.com/
 // @version      0.1
-// @description  try to take over the world!
+// @description  A simple script to resize the map on Helltides.com. I find it more usable on a larger monitor this way.
 // @author       uolamer
 // @match        https://helltides.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=helltides.com
