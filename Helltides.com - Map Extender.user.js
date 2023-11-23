@@ -6,13 +6,26 @@
 // @author       uolamer
 // @match        https://helltides.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=helltides.com
-// @grant        none
+// @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @require  https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @grant    GM_addStyle
 // ==/UserScript==
+/*- The @grant directive is needed to work around a design change
+    introduced in GM 1.0.   It restores the sandbox.
+*/
 
-(function() {
-    'use strict';
 
-    // Edit the numbers at the end of the following two lines for other sizes. Eg: 1200px
-    document.querySelector("#main > div.flex.flex-col.w-full.items-center.justify-center > div").setAttribute("style","max-height:1200px ; max-width:1500px");
+var intv = setInterval(function() {
+    var elems = document.querySelector("#main > div.flex.flex-col.items-center.justify-center.lg\\:flex-row.lg\\:items-stretch > div.flex.justify-center.items-center.h-screen.w-4\\/5.max-w-\\[1200px\\].max-h-\\[750px\\].bg-gray-700");
+    if(elems.length < 1){
+        return false;
+    }
+    //when element is found, clear the interval.
+    clearInterval(intv);
 
-})();
+    // Actual change we do on the page
+    document.querySelector("#main > div.flex.flex-col.items-center.justify-center.lg\\:flex-row.lg\\:items-stretch > div.flex.justify-center.items-center.h-screen.w-4\\/5.max-w-\\[1200px\\].max-h-\\[750px\\].bg-gray-700").classList.replace("max-h-[750px]", "max-h-[1300px]");
+    for (var i = 0, len = elems.length; i < len; i++){
+        elems[i].value = "";
+    }
+}, 250);
