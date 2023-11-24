@@ -24,7 +24,8 @@ var intv = setInterval(function() {
     clearInterval(intv);
 
     // Actual change we do on the page
-    document.querySelector("#main > div.flex.flex-col.items-center.justify-center.lg\\:flex-row.lg\\:items-stretch > div.flex.justify-center.items-center.h-screen.w-4\\/5.max-w-\\[1200px\\].max-h-\\[750px\\].bg-gray-700").classList.replace("max-h-[750px]", "max-h-[1300px]");
+    document.querySelector("#main > div.flex.flex-col.items-center.justify-center.lg\\:flex-row.lg\\:items-stretch > div.flex.justify-center.items-center.h-screen.w-4\\/5.max-w-\\[1200px\\].max-h-\\[750px\\].bg-gray-700").classList.replace("max-w-[1200px]", "max-w-[1800px]");
+    document.querySelector("#main > div.flex.flex-col.items-center.justify-center.lg\\:flex-row.lg\\:items-stretch > div.flex.justify-center.items-center.h-screen.w-4\\/5.max-w-\\[1800px\\].max-h-\\[750px\\].bg-gray-700").classList.replace("max-h-[750px]", "max-h-[1800px]")
     for (var i = 0, len = elems.length; i < len; i++){
         elems[i].value = "";
     }
